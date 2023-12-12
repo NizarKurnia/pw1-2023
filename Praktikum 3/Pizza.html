@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+    <fieldset>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tugas Praktikum 3</title>
 </head>
 <body>
-    <h1>Black Goose Bistro | Pizza-on-Demand</h1>
-    <p>Our 12" wood-fire pizzas are available to delivery. Build your 
+    <h2>Black Goose Bistro | Pizza-on-Demand</h2>
+    <p>Our 12" wood-fire pizzas are available to delivery. Build your<br>
     custom pizza and we'll deliver it within an hour</p>
-
+<form>
+    <div>
     <p>Your Information</p>
     <label>Name:</label>
     <input type="text">
@@ -29,11 +31,12 @@
 
     <label>Delivery Instruction</label>
     <br>
-    <textarea cols="50" rows="3"></textarea>
+    <textarea cols="50" rows="3"></textarea>   
+    </div> 
 
     <h3>Design Your Dream Pizza:</h3>
     <p>Pizza specs</p>
-
+    <div>
     <label>Crust(Choose one):</label>
     <br>
     <input type="radio" id="classic white" name="crust" value="Classic White">
@@ -45,5 +48,29 @@
     <input type="radio" id="gluten-free" name="crust" value="Gluten-free">
     <label for="gluten-free">Gluten-free</label><br>
 
+    <label>Toppings (Choose as many as you want):</label><br />
+    <input type="checkbox" id="Toppings1" name="Toppings1" value="Red sauce" required>
+    <label for="Toppings1">Red sauce</label><br />
+    <input type="checkbox" id="Toppings2" name="Toppings2" value="White sauce">
+    <label for="Toppings2">White sauce</label><br />
+    <input type="checkbox" id="Toppings3" name="Toppings3" value="Mozarella Cheese">
+    <label for="Toppings3">Mozarella Cheese</label><br />
+    <input type="checkbox" id="Toppings4" name="Toppings4" value="Pepperoni">
+    <label for="Toppings4">Pepperoni</label><br />
+    <input type="checkbox" id="Toppings5" name="Toppings5" value="Mushrooms">
+    <label for="Toppings5">Mushrooms</label><br />
+    <input type="checkbox" id="Toppings6" name="Toppings6" value="Peppers">
+    <label for="Toppings6">Peppers</label><br />
+    <input type="checkbox" id="Toppings7" name="Toppings7" value="Anchovies">
+    <label for="Toppings7">Anchovies</label><br />
+    <br>
+    </div>
+
+    <label>Number<br>
+    How many pizzas:</label> <input type="number" min="1" max="6">
+    <br><br>
+    <input type="submit" value="Bring me pizza!"> <input type="reset" value="Reset">
+</form>
 </body>
+    </fieldset>
 </html>

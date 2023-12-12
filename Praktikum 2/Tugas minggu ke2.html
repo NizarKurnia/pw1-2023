@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tugas Minggu Ke-2</title>
+    <link rel="stylesheet" href="Tugas minggu ke2.css">
 </head>
 <body>
-    <header></header>
+    <header>
     <h1>Selamat Datang di My Game list</h1>
+    </header>
     <main>
         <section>
+            <div class="profile">
            <h2>Profile Pembuat</h2> 
            <ul>
             <li>Nama : Nizar Kurnia Alfaizi</li>
@@ -17,53 +20,51 @@
             <li>Linkedin : <a href="https://www.linkedin.com/in/nizar-kurnia-alfaizi-85666a293/" target="_blank">LinkedIn Mhs
             </a></li>
            </ul>
+            </div>
         </section>
         <section>
-            <h2>Deskripsi My Game list</h2>
+            <h2 class="deskripsi">Deskripsi My Game list</h2>
             <p>Ini adalah halaman web Game yang menampilkan game-game yang 
                 saya mainkan. Game yang saya mainkan memiliki genre-genre 
                 yang berbeda-beda dari segi gameplay dan visual art style.</p>
-        </section>
-        <section>
-            <h2>Game Favorit</h2>
+                <br>
+            <h2 class="gamef">Game Favorit</h2>
+            <div class="image">
             <img 
             src="ML.jpg"
-            alt="Mobile Legend Logo"
-            style="width:200px; height:100px;">
+            alt="Mobile Legend Logo">
 
             <img 
             src="GI.png"
-            alt="Genshin Impact Logo"
-            style="width:200px; height:100px;">
+            alt="Genshin Impact Logo">
 
             <img 
             src="HSR.jpg"
-            alt="Honkai StarRail Logo"
-            style="width:200px; height:100px;">
+            alt="Honkai StarRail Logo">
+            </div>
 
+            <div class="image">
             <img 
             src="A.png"
-            alt="Arknights Logo"
-            style="width:200px; height:100px;">
+            alt="Arknights Logo">
 
             <img 
             src="BA.png"
-            alt="Blue Archive Logo"
-            style="width:200px; height:100px;">
+            alt="Blue Archive Logo">
 
             <img 
             src="CS2.png"
-            alt="Counter Strike 2 Logo"
-            style="width:200px; height:100px;">
+            alt="Counter Strike 2 Logo">
+            </div>
         </section>
         <section>
             <h2>Informasi Game Favorit</h2>
-            <table border="1" cellspacing="0" cellpadding="5">
+            <table>
                 <tr>
                     <th>Nama Game</th>
                     <th>Hal Menarik</th>
                     <th>Lama Bermain</th>
-                    <th>ALasan Bermain</th>
+                    <th>Alasan Bermain</th>
                 </tr>
                 <tr>
                     <td>Mobile Legends:Bang-Bang</td>
@@ -106,27 +107,27 @@
         <section>
             <h2>Mabar Gas</h2>
             <form>
-                <label>Nama</label>
+                <label>Nama:</label>
                 <input type="text">
                 <br><br>
 
-                <label>Email</label>
+                <label>Email:</label>
                 <input type="email">
                 <br><br>
 
-                <label>Nickname</label>
+                <label>Nickname:</label>
                 <input type="text">
                 <br><br>
 
-                <label>UID</label>
+                <label>UID:</label>
                 <input type="text">
                 <br><br>
 
-                <label>Tanggal Dateng</label>
+                <label>Tanggal Login:</label>
                 <input type="date">
                 <br><br>
 
-                <label>Deskripsi</label>
+                <label>Deskripsi:</label>
                 <div>
                 <textarea cols="30" rows="10"></textarea>
                 </div>
@@ -134,9 +135,9 @@
                 <input type="submit" value="Kirim">
             </form>
         </section>
-        <section>
+        <footer>
             <p>Copyright &copy; 2023 Nizar Kurnia Alfaizi</p>
-        </section>
+        </footer>
     </main>
 </body>
 </html>

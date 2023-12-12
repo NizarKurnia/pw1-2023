@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 400px;
+    width: 700px;
+    margin: auto;
+    border: 2px solid #000;
+    background-image: url("HSR.jpg");
+    background-size: cover;
+}
+
+.box {
+    width: 120px;
+    height: 120px;
+    font-size: 50px;
+    text-align: center;
+    line-height: 120px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid white;
+}
+
+.box1 {
+    background-color: rgb(255, 81, 0);
+}
+
+.box2 {
+    background-color: rgb(212, 255, 0);
+}
+
+.box3 {
+    background-color: rgb(0, 255, 132);
+}
+
+.box4 {
+    background-color: rgb(0, 119, 255);
+}
+
+.box5 {
+    background-color: rgb(230, 0, 255);
+}

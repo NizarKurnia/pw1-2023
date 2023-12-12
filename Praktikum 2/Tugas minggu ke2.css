@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial,sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #f4f4f4;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+section {
+    background-color: #fff;
+    margin: 20px 150px;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile {
+    background-color: #565656;
+    color: #fff;
+    padding: 20px;
+}
+ul {
+    margin: 5px 50px;
+}
+
+a {
+    color: rgb(227, 239, 4);
+}
+
+.deskripsi {
+    text-align: center;
+}
+
+.gamef {
+    text-align: center;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    width: 200px;
+    height: 100px;
+    margin: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px;
+}
+
+th,td {
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #5e5c5c;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 10px;
+}
