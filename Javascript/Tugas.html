@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menghitung diameter lingkaran</title>
+    <title>Menghitung lingkaran</title>
 </head>
 <body>
 
     <h1>Hitung Luas dan Keliling Lingkaran</h1>
     <form>
         <label for="jari_jari">Jari-Jari Lingkaran:</label>
-        <input type="number" id="jari_jari" onchange="hitungLuasDanKeliling()" required>
-    </form>
+        <input type="number" id="jari_jari" onchange="hitungLuasDanKeliling()" min="1" required>
+    </form><br>
 
-    <P id="Luas"></P>
-    <P id="Keliling"></P>
+
+
+    <label for="">Luas</label><br>
+    <textarea name="" id="Luas" cols="30" rows="2"></textarea><br>
+    <label for="">Keliling</label><br>
+    <textarea name="" id="Keliling" cols="30" rows="2"></textarea>
     <script>
         function hitungLuasDanKeliling() {
             let jariJari = parseFloat(document.getElementById('jari_jari').value);
 
-            if (!isNaN(jariJari)) {
+            if (jariJari) {
                 let luas = Math.PI * Math.pow(jariJari, 2);
                 let keliling = 2 * Math.PI * jariJari;
 
@@ -34,5 +38,6 @@
     <!-- Math.PI adalah angka PI yaitu 3.14 -->
     <!-- Math.pow adalah buat perpangkatan -->
     <!-- tofixed adalah untuk menampilkan ada berapa nomor setelah koma jika hasilnya desimal -->
+    <!-- alert adalah memunculkan pops up ketika user salah melakukan input -->
 </body>
 </html>
