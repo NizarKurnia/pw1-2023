@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f5f6f8;
+    font-family: sans-serif;
+    padding: 30px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(197, 210, 222);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.cards {
+    display: grid;
+    gap: 30px;
+    max-width: 250px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    transition: height 0.3s ease-in-out;
+    margin-top: 100px;
+}
+
+.card .img-holder {
+    width: 175px;
+    height: 125px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card.card-1:nth-child(1) .img-holder {
+    background-image: url(img/kerak\ telor.png);
+    background-size: cover;
+}
+
+.card.card-2:nth-child(1) .img-holder {
+    background-image: url(img/ayam\ betutu.png);
+    background-size: cover;
+}
+
+.card.card-3:nth-child(1) .img-holder {
+    background-image: url(img/mie\ aceh.png);
+    background-size: cover;
+}
+
+.card.card-4:nth-child(1) .img-holder {
+    background-image: url(img/nasi\ gudeg.png);
+    background-size: cover;
+}
+
+.card.card-5:nth-child(1) .img-holder {
+    background-image: url(img/otak-otak.png);
+    background-size: cover;
+}
+
+.card.card-6:nth-child(1) .img-holder {
+    background-image: url(img/pempek.png);
+    background-size: cover;
+}
+
+.card.card-7:nth-child(1) .img-holder {
+    background-image: url(img/rendang.png);
+    background-size: cover;
+}
+
+.card.card-8:nth-child(1) .img-holder {
+    background-image: url(img/sate\ bandeng.png);
+    background-size: cover;
+}
+
+.card.card-9:nth-child(1) .img-holder {
+    background-image: url(img/serabi.png);
+    background-size: cover;
+}
+
+.card.card-10:nth-child(1) .img-holder {
+    background-image: url(img/soto\ banjar.png);
+    background-size: cover;
+}
+
+
+.card h2, .card p {
+    margin-bottom: 15px;
+}
+
+.card h1 {
+    float:inline-end ;
+}
+
+.card p {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    transition-delay: 0.1s; /* menghindari error */
+}
+
+.card a {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    transition-delay: 0.1s;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 4px;
+    background-color: red;
+    cursor: pointer;
+}
+
+.card a:hover {
+    background-color: rgb(223, 6, 6);
+}
+
+/* mulai hover dan animasi */
+.card-content {
+    height: 35px;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+}
+
+.card:hover .img-holder {
+    transform: scale(0.9);
+    margin-top: -120px;
+}
+
+.card:hover .card-content {
+    height: 150px;
+    overflow: visible;
+}
+
+.card:hover p, .card-content a {
+    opacity: 1;
+}

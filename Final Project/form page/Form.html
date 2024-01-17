@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+
+<h2>Pemesanan Makanan</h2>
+<p>Resize the browser window to see the effect. When the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other.</p>
+
+<div class="container">
+  <form action="">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">Nama Lengkap</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Masukan nama..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="nomor">Nomor Telepon</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="nomor" name="nomor" placeholder="Masukan nomor..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Menu Makanan</label>
+    </div>
+    <div class="col-75">
+      <div class="menu">
+        <div>
+            <img src="img/rendang.png" alt="">
+            <label for="rendang">Rendang</label>
+            <input type="number" class="menu-item" id="rendang" min="0" max="10">
+        </div>
+        <div>
+            <img src="img/otak-otak.png" alt="">
+            <label for="otak-otak">Otak-otak</label>
+            <input type="number" class="menu-item" id="otak-otak" min="0" max="10">
+        </div>
+        <div>
+            <img src="img/sate bandeng.png" alt="">
+            <label for="sate-bandeng">Sate Bandeng</label>
+            <input type="number" class="menu-item" id="sate-bandeng" min="0" max="10">
+        </div>
+        <div>
+            <img src="img/serabi.png" alt="">
+            <label for="serabi">Serabi</label>
+            <input type="number" class="menu-item" id="serabi" min="0" max="10">
+        </div>
+        <div>
+            <img src="img/nasi gudeg.png" alt="">
+            <label for="nasi-gudeg">Nasi Gudeg</label>
+            <input type="number" class="menu-item" id="nasi-gudeg" min="0" max="10">
+        </div>
+        <div>
+            <img src="img/mie aceh.png" alt="">
+            <label for="mie-aceh">Mie Aceh</label>
+            <input type="number" class="menu-item" id="mie-aceh" min="0" max="10">
+        </div>
+        <div>
+            <img src="img/ayam betutu.png" alt="">
+            <label for="ayam-betutu">Ayam Betutu</label>
+            <input type="number" class="menu-item" id="ayam-betutu" min="0" max="10">
+        </div>
+        <div>
+            <img src="img/pempek.png" alt="">
+            <label for="pempek">Pempek</label>
+            <input type="number" class="menu-item" id="pempek" min="0" max="10">
+        </div>
+        <div>
+            <img src="img/soto banjar.png" alt="">
+            <label for="soto-banjar">Soto Banjar</label>
+            <input type="number" class="menu-item" id="soto-banjar" min="0" max="10">
+        </div>
+        <div>
+            <img src="img/kerak telor.png" alt="">
+            <label for="kerak-telor">Kerak Telor</label>
+            <input type="number" class="menu-item" id="kerak-telor" min="0" max="10">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="deskripsi">Deskripsi</label>
+    </div>
+    <div class="col-75">
+      <textarea id="deskripsi" name="deskripsi" max="200" placeholder="Deskripsi tambahan.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <input type="submit" onclick="printFormData()" value="Pesan">
+  </div>
+  </form>
+</div>
+
+<script>
+  function printFormData() {
+    // Get form values
+    let fullName = document.getElementById('fname').value;
+    let phoneNumber = document.getElementById('nomor').value;
+    let menuItems = document.querySelectorAll('.menu-item');
+    let description = document.getElementById('deskripsi').value;
+
+    let orderDetails = "Selected Menu Items:\n";
+
+    // You can customize how you want to display the data, here's a simple alert example
+    let printMessage = "Nama Lengkap: " + fullName + "\n" +
+                       "Nomor Telepon: " + phoneNumber + "\n" +
+                       "Deskripsi: " + description + "\n\n"  +
+                       "Makanan di pesan:\n";
+
+    menuItems.forEach(function(item) {
+      let quantity = parseInt(item.value) || 0;
+      if (quantity > 0) {
+        printMessage += item.previousElementSibling.textContent + ": " + quantity + "\n";
+      }
+    });
+
+    
+    alert(printMessage);
+
+    // You can also use other methods to display or process the data, such as updating an HTML element, sending it to the server, etc.
+  }
+</script>
+
+
+</body>
+</html>
