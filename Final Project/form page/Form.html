@@ -9,97 +9,107 @@
 <body>
 
 <h2>Pemesanan Makanan</h2>
-<p>Resize the browser window to see the effect. When the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other.</p>
+<p>Silahkan masukan pesanan anda pada form di bawah ini.</p>
 
 <div class="container">
   <form action="">
-  <div class="row">
-    <div class="col-25">
-      <label for="fname">Nama Lengkap</label>
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Nama Lengkap</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Masukan nama..">
+      </div>
     </div>
-    <div class="col-75">
-      <input type="text" id="fname" name="firstname" placeholder="Masukan nama..">
+    <div class="row">
+      <div class="col-25">
+        <label for="nomor">Nomor Telepon</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="nomor" name="nomor" placeholder="Masukan nomor..">
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="nomor">Nomor Telepon</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="nomor" name="nomor" placeholder="Masukan nomor..">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="country">Menu Makanan</label>
-    </div>
-    <div class="col-75">
-      <div class="menu">
-        <div>
-            <img src="img/rendang.png" alt="">
-            <label for="rendang">Rendang</label>
-            <input type="number" class="menu-item" id="rendang" min="0" max="10">
-        </div>
-        <div>
-            <img src="img/otak-otak.png" alt="">
-            <label for="otak-otak">Otak-otak</label>
-            <input type="number" class="menu-item" id="otak-otak" min="0" max="10">
-        </div>
-        <div>
-            <img src="img/sate bandeng.png" alt="">
-            <label for="sate-bandeng">Sate Bandeng</label>
-            <input type="number" class="menu-item" id="sate-bandeng" min="0" max="10">
-        </div>
-        <div>
-            <img src="img/serabi.png" alt="">
-            <label for="serabi">Serabi</label>
-            <input type="number" class="menu-item" id="serabi" min="0" max="10">
-        </div>
-        <div>
-            <img src="img/nasi gudeg.png" alt="">
-            <label for="nasi-gudeg">Nasi Gudeg</label>
-            <input type="number" class="menu-item" id="nasi-gudeg" min="0" max="10">
-        </div>
-        <div>
-            <img src="img/mie aceh.png" alt="">
-            <label for="mie-aceh">Mie Aceh</label>
-            <input type="number" class="menu-item" id="mie-aceh" min="0" max="10">
-        </div>
-        <div>
-            <img src="img/ayam betutu.png" alt="">
-            <label for="ayam-betutu">Ayam Betutu</label>
-            <input type="number" class="menu-item" id="ayam-betutu" min="0" max="10">
-        </div>
-        <div>
-            <img src="img/pempek.png" alt="">
-            <label for="pempek">Pempek</label>
-            <input type="number" class="menu-item" id="pempek" min="0" max="10">
-        </div>
-        <div>
-            <img src="img/soto banjar.png" alt="">
-            <label for="soto-banjar">Soto Banjar</label>
-            <input type="number" class="menu-item" id="soto-banjar" min="0" max="10">
-        </div>
-        <div>
-            <img src="img/kerak telor.png" alt="">
-            <label for="kerak-telor">Kerak Telor</label>
-            <input type="number" class="menu-item" id="kerak-telor" min="0" max="10">
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Menu Makanan</label>
+      </div>
+      <div class="col-75">
+        <div class="menu">
+          <div class="makanan">
+              <img src="img/rendang.png" alt="">
+              <h4>Rendang</h4>
+              <h3>20K</h3>
+              <input type="number" class="menu-item" id="rendang" min="0" max="10">
+          </div>
+          <div class="makanan">
+              <img src="img/otak-otak.png" alt="">
+              <h4>Otak-otak</h4>
+              <h3>10K</h3>
+              <input type="number" class="menu-item" id="otak-otak" min="0" max="10">
+          </div>
+          <div class="makanan">
+              <img src="img/sate bandeng.png" alt="">
+              <h4>Sate Bandeng</h4>
+              <h3>22K</h3>
+              <input type="number" class="menu-item" id="sate-bandeng" min="0" max="10">
+          </div>
+          <div class="makanan">
+              <img src="img/serabi.png" alt="">
+              <h4>Serabi</h4>
+              <h3>10K</h3>
+              <input type="number" class="menu-item" id="serabi" min="0" max="10">
+          </div>
+          <div class="makanan">
+              <img src="img/nasi gudeg.png" alt="">
+              <h4>Nasi Gudeg</h4>
+              <h3>15K</h3>
+              <input type="number" class="menu-item" id="nasi-gudeg" min="0" max="10">
+          </div>
+          <div class="makanan">
+              <img src="img/mie aceh.png" alt="">
+              <h4>Mie Aceh</h4>
+              <h3>25K</h3>
+              <input type="number" class="menu-item" id="mie-aceh" min="0" max="10">
+          </div>
+          <div class="makanan">
+              <img src="img/ayam betutu.png" alt="">
+              <h4>Ayam Betutu</h4>
+              <h3>40K</h3>
+              <input type="number" class="menu-item" id="ayam-betutu" min="0" max="10">
+          </div>
+          <div class="makanan">
+              <img src="img/pempek.png" alt="">
+              <h4>Pempek</h4>
+              <h3>12K</h3>
+              <input type="number" class="menu-item" id="pempek" min="0" max="10">
+          </div>
+          <div class="makanan">
+              <img src="img/soto banjar.png" alt="">
+              <h4>Soto Banjar</h4>
+              <h3>20K</h3>
+              <input type="number" class="menu-item" id="soto-banjar" min="0" max="10">
+          </div>
+          <div class="makanan">
+              <img src="img/kerak telor.png" alt="">
+              <h4>Kerak Telor</h4>
+              <h3>9K</h3>
+              <input type="number" class="menu-item" id="kerak-telor" min="0" max="10">
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="deskripsi">Deskripsi</label>
+    <div class="row">
+      <div class="col-25">
+        <label for="deskripsi">Deskripsi</label>
+      </div>
+      <div class="col-75">
+        <textarea id="deskripsi" name="deskripsi" max="200" placeholder="Deskripsi tambahan.." style="height:200px"></textarea>
+      </div>
     </div>
-    <div class="col-75">
-      <textarea id="deskripsi" name="deskripsi" max="200" placeholder="Deskripsi tambahan.." style="height:200px"></textarea>
+    <br>
+    <div class="row">
+      <input type="submit" onclick="printFormData()" value="Pesan">
     </div>
-  </div>
-  <br>
-  <div class="row">
-    <input type="submit" onclick="printFormData()" value="Pesan">
-  </div>
   </form>
 </div>
 
