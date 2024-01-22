@@ -39,9 +39,15 @@ label {
   border-radius: 5px;
 }
 
-h4, h3  {
+h4  {
   display: block;
   margin: 5px 0;
+}
+
+span {
+  font-weight: bold;
+  float: inline-end;
+  margin-right: 25px;
 }
 
 .makanan {
@@ -57,7 +63,9 @@ input[type=number] {
   width: 40px;
   border: 1px solid;
   border-radius: 3px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  float: inline-start;
+  margin-left: 15px;
 }
   
 input[type=submit] {
